@@ -1,0 +1,43 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+ Widget build(BuildContext context){
+   return MaterialApp(
+       debugShowCheckedModeBanner: false,
+   home:
+
+   Scaffold(body: (Column(children:[Container(width: 500, height: 750 , color: Colors.white70, padding:EdgeInsets.fromLTRB(20, 20, 20, 20),
+   child: Column(crossAxisAlignment: CrossAxisAlignment.start,children:[
+     SizedBox(height: 60,),
+     Text("Get's started", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, ),
+   ),
+     Text("Already have an account? ") , Text("sign in", style: TextStyle(decoration: TextDecoration.underline, color: Colors.lightBlue, fontSize: 15, fontWeight: FontWeight.w100, fontStyle: FontStyle.italic),
+     ),
+     SizedBox(height: 60,),
+     Text("Full name", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w100, ),
+     ),
+     SizedBox(height: 6,),
+     TextField(style: null, ),
+     SizedBox(height: 8,),
+     Text("Email adress", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w100, ),
+     ),
+     SizedBox(height: 6,),
+     TextField(),
+     SizedBox(height: 8,),
+     Text("Password", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w100, ),
+     ),
+     TextField(),
+     Row(children:[
+     Icon(Icons. check_box_outline_blank_outlined, size: 20, ),
+     Text("I agrred to platformterms and services and \n private policy", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w100, ),
+     )]),
+     SizedBox(height: 30,),
+     Column(crossAxisAlignment: CrossAxisAlignment.stretch, children:[ElevatedButton(child: Text('Register') , onPressed: (){}, )],)
+  ] ))]))));
+ }
+
+}
